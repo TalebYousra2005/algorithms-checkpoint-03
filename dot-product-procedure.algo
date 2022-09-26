@@ -1,0 +1,10 @@
+PROCEDURE dot_product(VAR v1,v2:ARRAY_OF INTEGER[15],n:INTEGER)
+VAR
+    ps,i:INTEGER;
+BEGIN
+    ps := 0;
+    FOR i FROM 0 TO n STEP DO
+        ps := ps+(v1[i]*v2[i]);
+    END_FOR
+    RETURN ps;
+END
